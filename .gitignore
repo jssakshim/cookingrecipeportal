@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/Cooking_Recipe_Portal
+/admin/css
+/admin/jscripts/tiny_mce
+/admin/lists
