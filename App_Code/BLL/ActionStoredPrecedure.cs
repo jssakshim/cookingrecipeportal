@@ -798,10 +798,21 @@ namespace BLL
        /// Returns admin username for login session validation
        /// </summary>
        /// <returns></returns>
-       public IDataReader AdminGetCredentialSessionValidation
-       {
-           get { return DataAccess.GetFromReader("AdminGetCredentialForsessionValidation"); }
-       }
+       //public IDataReader AdminGetCredentialSessionValidation
+       //{
+       //    get { return DataAccess.GetFromReader("AdminGetCredentialForsessionValidation"); }
+       //}
+
+        public IDataReader AdminGetCredentialSessionValidation(string username, string password)
+        {
+            SqlParameter prmUName = new SqlParameter("@UName", SqlDbType.VarChar,50);
+            prmUName.Value = username;
+
+            SqlParameter prmPassword = new SqlParameter("@Password", SqlDbType.VarChar, 50);
+            prmPassword.Value = password;
+
+            return DataAccess.GetFromReader("AdminGetCredentialForsessionValidation", prmUName, prmPassword);
+        }
 
        /// <summary>
        /// Admin Recipe Manager Delete Recipe

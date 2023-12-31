@@ -47,7 +47,7 @@ namespace UserVal
             try
             {
                 //Get admin username stored in the database
-                IDataReader dr = myBL.AdminGetCredentialSessionValidation;
+                IDataReader dr = myBL.AdminGetCredentialSessionValidation(HttpContext.Current.Session["adminuserid"].ToString(), HttpContext.Current.Session["adminpassword"].ToString());
 
                 dr.Read();
 
