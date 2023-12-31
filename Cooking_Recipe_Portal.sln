@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "p-1713--Cooking_Recipe_Portal", ".", "{D4336C70-A03B-48C1-A078-D743264A0775}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.8"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_55978"
+		Debug.AspNetCompiler.PhysicalPath = "..\p-1713--Cooking_Recipe_Portal\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55978\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_55978"
+		Release.AspNetCompiler.PhysicalPath = "..\p-1713--Cooking_Recipe_Portal\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_55978\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "55978"
+		SlnRelativePath = "..\p-1713--Cooking_Recipe_Portal\"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D4336C70-A03B-48C1-A078-D743264A0775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4336C70-A03B-48C1-A078-D743264A0775}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CCB74B1F-51F5-4675-BAB1-B03231CF1561}
+	EndGlobalSection
+EndGlobal
