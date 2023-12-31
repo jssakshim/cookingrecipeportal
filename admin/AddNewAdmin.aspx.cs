@@ -21,6 +21,6 @@ public partial class admin_AddNewAdmin : System.Web.UI.Page
         string usrname = Util.FormatTextForInput(Request.Form[txtUsername.UniqueID]);
         string pwd = Util.FormatTextForInput(Request.Form[txtPassword.UniqueID]);
         addNewAdmin.AddAdmin(usrname, pwd);
-        lblMessage.Text="Admin added successfully."
+        lblMessage.Text = "Admin added successfully.";
     }
 }
