@@ -37,28 +37,28 @@ namespace EmailSend
             int Err = 0;
 
             //Only deliver email if both fields are provided.
-            if (!string.IsNullOrEmpty(ToEmail) && !string.IsNullOrEmpty(FromEmail))
-            {
-                try
-                {
-                    MailAddress from = new MailAddress(FromEmail);
-                    MailAddress to = new MailAddress(ToEmail);
-                    MailMessage msg = new MailMessage(from, to);
+            //if (!string.IsNullOrEmpty(ToEmail) && !string.IsNullOrEmpty(FromEmail))
+            //{
+            //    try
+            //    {
+            //        MailAddress from = new MailAddress(FromEmail);
+            //        MailAddress to = new MailAddress(ToEmail);
+            //        MailMessage msg = new MailMessage(from, to);
 
-                    msg.Subject = Subject;
-                    msg.Body = emailbody;
-                    msg.IsBodyHtml = true;
-                    msg.Priority = MailPriority.High;
+            //        msg.Subject = Subject;
+            //        msg.Body = emailbody;
+            //        msg.IsBodyHtml = true;
+            //        msg.Priority = MailPriority.High;
 
-                    SmtpClient smtp = new SmtpClient();
-                    smtp.Send(msg);
-                }
-                catch (Exception x)
-                {
-                    Err = 1;
-                    throw new SystemException();
-                }
-            }
+            //        SmtpClient smtp = new SmtpClient();
+            //        smtp.Send(msg);
+            //    }
+            //    catch (Exception x)
+            //    {
+            //        Err = 1;
+            //        throw new SystemException();
+            //    }
+            //}
 
             return Err;
         }

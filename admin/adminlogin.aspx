@@ -17,9 +17,9 @@
 <span class="content2">
 <br />
 <br />
-<b>Username:</b> dexter
+<%--<b>Username:</b> dexter--%>
 <br />
-<b>Password:</b> zafra
+<%--<b>Password:</b> zafra--%>
 </span>
 </div>
 <br />
